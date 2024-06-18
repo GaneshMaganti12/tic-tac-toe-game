@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.tic-tac-toe-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top, #bfa843, #684747);
+  padding: 70px 20px 0px 20px;
+  display: flex;
+  justify-content: center;
+}
+.tic-tac-toe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.title-player-turn-count-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 34px;
+  color: #f5f5f5;
+  margin-bottom: 15px;
+  font-family: "Roboto";
+}
+.player-turn {
+  font-size: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: "Roboto";
+}
+.player {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px 10px;
+  color: #c0c0c0;
+  font-family: "Roboto";
+}
+.player-count-buttons-card-large {
+  display: none;
+  flex-direction: column;
+}
+.game-container-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 270px;
+  margin-bottom: 20px;
+}
+.game-card {
+  height: 90px;
+  width: 90px;
+  border: 1px solid #343434;
+  background-color: #e4e4e4;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #343434;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+.player-count-buttons-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.players-count-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.player-count {
+  font-size: 15px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+}
+.count {
+  font-weight: 700;
+  font-size: 24px;
+  margin-left: 5px;
+  font-family: "Roboto";
+}
+.buttons-container {
+  display: flex;
+}
+.game-button {
+  font-size: 14px;
+  background-color: #f1f1f1;
+  color: #2f2f2f;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  margin: 0px 20px;
+  margin-bottom: 15px;
+  font-family: "Roboto";
+}
+.game-button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .tic-tac-toe-container {
+    padding: 50px 20px 20px 20px;
+  }
+  .tic-tac-toe-card {
+    max-width: 700px;
+  }
+  .title {
+    font-size: 40px;
+    margin-bottom: 18px;
+  }
+  .player-turn {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+  .player {
+    font-size: 26px;
+  }
+  .game-container {
+    width: 300px;
+  }
+  .game-card {
+    height: 100px;
+    width: 100px;
+    font-size: 44px;
+  }
+  .players-count-card {
+    margin-bottom: 15px;
+  }
+  .player-count {
+    font-size: 17px;
+  }
+  .count {
+    font-size: 28px;
+    margin-left: 7px;
+  }
+  .game-button {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .tic-tac-toe-container {
+    align-items: center;
+    padding: 0;
+  }
+  .tic-tac-toe-card {
+    max-width: 1100px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title-player-turn-count-card {
+    width: 100%;
+    align-items: center;
+  }
+  .title {
+    font-size: 58px;
+  }
+  .player-turn {
+    font-size: 24px;
+  }
+  .player {
+    font-size: 30px;
+  }
+  .player-count-buttons-card-large {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .game-container {
+    width: 360px;
+  }
+  .game-card {
+    height: 120px;
+    width: 120px;
+    font-size: 44px;
+  }
+  .player-count-buttons-card {
+    display: none;
+    width: 100%;
+  }
+  .players-count-card {
+    margin-bottom: 15px;
+    width: 50%;
+  }
+  .player-count {
+    font-size: 20px;
+  }
+  .count {
+    font-size: 36px;
+    margin-left: 10px;
+  }
+  .game-button {
+    font-size: 16px;
+    margin: 0px 20px;
+    margin-bottom: 25px;
+  }
+}
