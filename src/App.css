@@ -9,15 +9,17 @@
   height: 100vh;
   width: 100vw;
   background-image: linear-gradient(to top, #bfa843, #684747);
-  padding: 70px 20px 0px 20px;
+  padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .tic-tac-toe-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 18px;
 }
 .title-player-turn-count-card {
   width: 100%;
@@ -28,19 +30,48 @@
 .title {
   font-size: 34px;
   color: #f5f5f5;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-family: "Roboto";
 }
-.player-turn {
+.large {
+  display: none;
+}
+.select-player-card {
+  margin-bottom: 15px;
+}
+.select-player {
+  font-family: "ROboto";
   font-size: 16px;
-  margin-bottom: 8px;
+  margin: 0px 4px;
+  color: #343434;
+  padding: 7px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.select-player:first-child {
+  margin-left: 0;
+}
+.select-player:last-child {
+  margin-right: 0;
+}
+.one-player {
+  background-color: #eeeded77;
+  border-bottom: 3px solid #d2b821;
+}
+.two-player {
+  background-color: #eeeded77;
+  border-bottom: 3px solid #d2b821;
+}
+.player-turn {
+  font-size: 18px;
   display: flex;
   align-items: center;
   color: #000;
   font-family: "Roboto";
 }
 .player {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   margin: 0px 10px;
   color: #c0c0c0;
@@ -60,13 +91,14 @@
   flex-wrap: wrap;
   width: 270px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .game-card {
   height: 90px;
   width: 90px;
   border: 1px solid #343434;
   background-color: #e4e4e4;
-  font-size: 40px;
+  font-size: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,18 +151,22 @@
 
 @media screen and (min-width: 768px) {
   .tic-tac-toe-container {
-    padding: 50px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
   }
   .tic-tac-toe-card {
     max-width: 700px;
   }
   .title {
-    font-size: 40px;
+    font-size: 44px;
     margin-bottom: 18px;
+  }
+  .select-player {
+    font-size: 18px;
+    margin: 0px 6px;
   }
   .player-turn {
     font-size: 17px;
-    margin-bottom: 10px;
+    margin-bottom: -10px;
   }
   .player {
     font-size: 26px;
@@ -141,7 +177,7 @@
   .game-card {
     height: 100px;
     width: 100px;
-    font-size: 44px;
+    font-size: 48px;
   }
   .players-count-card {
     margin-bottom: 15px;
@@ -161,8 +197,7 @@
 
 @media screen and (min-width: 1024px) {
   .tic-tac-toe-container {
-    align-items: center;
-    padding: 0;
+    justify-content: center;
   }
   .tic-tac-toe-card {
     max-width: 1100px;
@@ -171,13 +206,25 @@
   }
   .title-player-turn-count-card {
     width: 100%;
-    align-items: center;
+    align-self: flex-start;
+    margin-top: 50px;
+  }
+  .select-player-card {
+    margin-bottom: 20px;
+  }
+  .small {
+    display: none;
+  }
+  .large {
+    display: block;
   }
   .title {
     font-size: 58px;
+    margin-bottom: 40px;
   }
   .player-turn {
     font-size: 24px;
+    margin: 15px 0px;
   }
   .player {
     font-size: 30px;
@@ -193,7 +240,7 @@
   .game-card {
     height: 120px;
     width: 120px;
-    font-size: 44px;
+    font-size: 56px;
   }
   .player-count-buttons-card {
     display: none;
